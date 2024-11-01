@@ -1,5 +1,9 @@
+
 package model;
 
-public interface DesplazarseEnPistaConPalo {
+/**
+ * Interfaz para representar el desplazamiento en pista con palo para jugadores de hockey.
+ */
+public interface IDesplazarseEnPistaConPalo {
     String desplazarseConPalo();
 }

@@ -1,3 +1,4 @@
+
 package ui;
 
 import java.util.*;
@@ -35,37 +36,36 @@ public class Executable {
 
         flag = false;
 
-		while (!flag) {
+        while (!flag) {
 
-			System.out.println("\n \n Bienvenido al menu:\n");
-			System.out.println("Opciones:\n" + "1. Fixture \n" 
-					+ "2. Precargar informacion \n" + "3. Realizar partido entre 2 equipos \n" + "4. Salir del programa \n");
+            System.out.println("\n \n Bienvenido al menu:\n");
+            System.out.println("Opciones:\n" + "1. Fixture \n" 
+                    + "2. Precargar informacion \n" + "3. Realizar partido entre 2 equipos \n" + "4. Salir del programa \n");
 
-			int option = escaner.nextInt();
+            int option = escaner.nextInt();
 
-			escaner.nextLine();
+            escaner.nextLine();
 
-			switch (option) {
-					case 1:
-
-						break;
-					case 2:
-
-						break;
-					case 3:
-
-						break;
-					case 4:
-						flag = true;
-						System.exit(0);
-						break;
-					default:
-						System.out.print("Por favor ingrese una opcion valida");
-						continue;
-			}
-
-		}
-
+            switch (option) {
+                    case 1:
+                        // Placeholder for Fixture option
+                        break;
+                    case 2:
+                        // Placeholder for Precargar informacion option
+                        break;
+                    case 3:
+                        // Placeholder for Realizar partido
+                        controladora.simularJuego(); // Adjusted to ensure match simulation
+                        break;
+                    case 4:
+                        flag = true;
+                        System.exit(0);
+                        break;
+                    default:
+                        System.out.print("Por favor ingrese una opcion valida");
+                        continue;
+            }
+        }
     }
 
     /**
@@ -80,7 +80,5 @@ public class Executable {
 
         Executable mainApp = new Executable();
         mainApp.run(flag);
-
     }
-
 }

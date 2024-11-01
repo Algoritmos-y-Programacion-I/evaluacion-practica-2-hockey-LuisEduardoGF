@@ -1,8 +1,10 @@
+
 package model;
 
-public class JugadorHockey extends Persona implements DesplazarseEnPistaConPalo {
-    protected String nombre;
-    protected int numero;
+/**
+ * Clase que representa a un Jugador de Hockey, derivada de Persona.
+ */
+public class JugadorHockey extends Persona implements IDesplazarseEnPistaConPalo {
     protected Posicion posicion;
 
     public JugadorHockey(String nombre, int edad, Posicion posicion) {
@@ -13,11 +15,6 @@ public class JugadorHockey extends Persona implements DesplazarseEnPistaConPalo 
     public Posicion getPosicion() {
         return posicion;
     }
-
-    public String getNombrePosicion() {
-        return posicion.toString();
-    }
-
 
     public String desplazarseConPalo() {
         if (posicion != Posicion.PORTERO) {

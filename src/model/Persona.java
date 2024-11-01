@@ -1,9 +1,19 @@
+
 package model;
 
-public  Persona {
-     String nombre;
-     int edad;
+/**
+ * Clase abstracta que representa una Persona en el juego de hockey.
+ */
+public abstract class Persona {
+    protected String nombre;
+    protected int edad;
 
+    /**
+     * Constructor de la clase Persona.
+     * 
+     * @param nombre Nombre de la persona.
+     * @param edad Edad de la persona.
+     */
     public Persona(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
@@ -13,16 +23,7 @@ public  Persona {
         return nombre;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
     public int getEdad() {
         return edad;
     }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
 }
